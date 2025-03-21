@@ -10,6 +10,12 @@ body {
     text-align: center;
     padding-top: 80px; /* Ensures content doesn’t overlap navbar */
     font-family: 'Poppins', sans-serif;
+    transform: scale(1);
+    transform-origin: top left;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
 }
 
 /* Navbar Styling */
