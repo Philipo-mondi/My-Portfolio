@@ -63,3 +63,20 @@ function scrollToContact() {
         behavior: "smooth"
     });
 }
+window.addEventListener("resize", function () {
+    let zoomLevel = Math.max(25, Math.min(window.devicePixelRatio * 100, 200)); 
+    let header = document.querySelector("header");
+
+    document.body.style.zoom = zoomLevel + "%"; // Adjust zoom dynamically
+    document.body.style.overflowX = "hidden";  // Prevent unwanted scrolling
+    document.documentElement.style.overflowX = "hidden"; // Fix for some browsers
+
+    // Ensure header covers full width
+    header.style.width = "100%";
+    header.style.position = "fixed";
+    header.style.left = "0";
+    header.style.right = "0";
+});
+
+// Ensure it runs on page load
+window.dispatchEvent(new Event("resize"));

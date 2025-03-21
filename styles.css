@@ -15,23 +15,87 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    
+    transform: none; /* Remove unnecessary transformation */
+    width: auto; /* Allow content to determine width */
+    height: auto; /* Allow content to determine height */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-y: auto; /* Enable vertical scrolling */
+    zoom: 80%; /* Default zoom level */
+}
+@media (min-width: 1200px) { 
+    body {
+        zoom: 90%; /* Restrict maximum zoom */
+    }
 }
 
-/* Navbar Styling */
+.container {
+    max-width: 90vw; /* Ensure content doesn't exceed 90% of the viewport width */
+    margin: auto; /* Center the content */
+}
+
+/* Ensure the navbar covers the entire width */
 header {
-    background: linear-gradient(90deg, #1e3c72, #2a5298); /* Elegant blue gradient */
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
     padding: 20px 40px;
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100vw; /* Ensures it reaches the full width */
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
+    z-index: 1000;;
+    right: 0;
 }
+
+/* Prevent horizontal scrolling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Make the scrollbar track transparent */
+::-webkit-scrollbar-track {
+    background: transparent; /* Removes the white background */
+}
+
+/* Style the scrollbar itself */
+::-webkit-scrollbar {
+    width: 6px; /* Thin scrollbar */
+}
+
+/* Style the scrollbar thumb (the moving part) */
+::-webkit-scrollbar-thumb {
+    background: rgba(160, 160, 160, 0.3); /* Faint grey scrollbar */
+    border-radius: 10px; /* Smooth edges */
+}
+
+/* On hover, make it slightly more visible */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(160, 160, 160, 0.5);
+}
+
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(160, 160, 160, 0.2) transparent;
+}
+
+
+/* Keep all sections responsive */
+section {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out; /* Smooth adjustment */
+}
+
 
 /* Navbar Text and Logo */
 .logo h1 {
