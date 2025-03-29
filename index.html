@@ -3,193 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Philip Omondi - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="favicon1.png">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="logo">
-            <img src="photo1.jpg" alt="Profile Photo">
+        <div class="header-container">
+            <div class="logo">
+                <img src="photo1.jpg" alt="Profile">
+                <h2 class="desktop-only">Fullstack Developer</h2>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <h2>fullstack developer</h2>
-        <nav>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
-
             </ul>
         </nav>
     </header>
-    
-    <section id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="photo2.jpg" alt="Profile Photo">
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="photo2.jpg" alt="Profile">
+                    </div>
+                    <div class="about-content">
+                        <h2>HI! I'M PHILIP OMONDI</h2>
+                        <p>
+                            I am a passionate software developer with a degree in Computer Science 
+                            from Kirinyaga University. My expertise lies in web development, software 
+                            engineering, and database management. I enjoy creating efficient, scalable, 
+                            and user-friendly applications that enhance digital experiences.
+                        </p>
+                        <button onclick="scrollToContact()" class="cta-button">Contact Me</button>
+                    </div>
                 </div>
-                <div class="about-text">
-                    <h2>HI! I'M PHILIP OMONDI</h2>
-                    <p>
-                        I am a passionate software developer with a degree in Computer Science 
-                        from Kirinyaga University. My expertise lies in web development, software 
-                        engineering, and database management. I enjoy creating efficient, scalable, 
-                        and user-friendly applications that enhance digital experiences.
-                    </p>
-                    <button class="btn" onclick="scrollToContact()">Contact Me</button>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Staff Management System</h3>
+                        <p>A comprehensive system for managing employees and HR processes.</p>
+                        <a href="https://github.com/Philipo-mondi/staff_management_system.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <h3>RESTapi</h3>
+                        <p>A robust REST API implementation for modern web applications.</p>
+                        <a href="https://github.com/Philipo-mondi/RESTapi.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Wavy Login Page</h3>
+                        <p>An attractive and user-friendly login page with modern design.</p>
+                        <a href="https://github.com/Philipo-mondi/Wavy-Login-Page.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Task Manager</h3>
+                        <p>A task management app with user authentication and real-time updates.</p>
+                        <a href="https://github.com/Philipo-mondi/Task-management-system.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Database Management</span>
+                    <span class="skill-tag">Strong Communication Skills</span>
+                    <span class="skill-tag">ICT Support</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="container">
+                <h2>Work Experience</h2>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <h3>Software Developer - PODII SOFTWARE SOLUTIONS</h3>
+                        <p>Developed web applications, optimized front-end performance, and collaborated with teams to enhance user experience.</p>
+                    </div>
+                    <div class="experience-card">
+                        <h3>ICT Support Technician - Shivling Supermarkets</h3>
+                        <p>Ensured that all computers, laptops, printers, interactive whiteboards, audio and other ICT hardware are working to their maximum potential; ensuring that all problems are fixed quickly and efficiently.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p class="contact-intro">Feel free to reach out to me via email or WhatsApp.</p>
+                
+                <a href="https://wa.me/254113137010" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+                    WhatsApp: +254113137010
+                </a>
+
+                <form action="https://getform.io/f/apjnllka" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Me</h3>
+                <p>
+                    I'm a passionate software developer specializing in web development, software engineering, 
+                    and database management. I strive to create efficient and scalable digital solutions.
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect With Me</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/omondi-philip-256a312a6" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://github.com/Philipo-mondi" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="mailto:omondiphilip123@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                    <a href="https://web.facebook.com/omondiphilip123" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-    
-    
-    
-    
-    
-    <section id="projects">
-        <h2>Projects</h2>
         
-        <div class="project">
-            <h3>Project 1 - staff management system</h3>
-            <p>A staff management system showcasing my skills in developing a system that accepts new employees and there <details>More on github</details>.</p>
-            <a href="https://github.com/Philipo-mondi/staff_management_system.git" target="_blank" class="btn">View on GitHub</a>
+        <div class="copyright">
+            <p>&copy; 2025 Philip Omondi. All Rights Reserved.</p>
         </div>
-    
-        <div class="project">
-            <h3>Project 2 - RESTapi</h3>
-            <p>A RESTapi That might beuseful in any of your projects<details>More on github</details>.</p>
-            <a href="https://github.com/Philipo-mondi/RESTapi.git" target="_blank" class="btn">View on GitHub</a>
-        </div>
-    
-        <div class="project">
-            <h3>Project 3 - Wavy Login Page</h3>
-            <p>A nice and attractive wavy login page with good ux.It is best for designing logins for a website<details>More on github</details>.</p>
-            <a href="https://github.com/Philipo-mondi/Wavy-Login-Page.git" target="_blank" class="btn">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Project 3 - Task Manager</h3>
-            <p>A task management app with user authentication and real-time updates<details>More on github</details>.</p>
-            <a href="https://github.com/Philipo-mondi/Task-management-system.git" target="_blank" class="btn">View on GitHub</a>
-        </div>
-    
-    </section>
-    
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>Database Management</li>
-            <li>Strong Communication Skills</li>
-            <li>An ICT Support Technician</li>
-        </ul>
-    </section>
-    
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div class="experience">
-            <h3>Software Developer - PODII SOFTWARE SOLUTIONS.</h3>
-            <p>Developed web applications, optimized front-end performance, and collaborated with teams to enhance user experience.</p>
-        </div>
-        <div class="experience">
-            <h3>ICT Support Technician - Shivling Supermarkets.</h3>
-            <p>Ensured that all the computers, laptops, printers, interactive whiteboards,
-                audio and other ICT hardware are working to their maximum potential; ensuring
-                that all problems are fixed quickly and efficiently</p>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me via email or WhatsApp.</p>
-    
-        <!-- WhatsApp Contact -->
-        <p><strong>WhatsApp:</strong> 
-            <a href="https://wa.me/254113137010" target="_blank">+254113137010</a>
-        </p>
-    
-         <!-- Contact Form -->
-    <form id="contact-form" action="https://getform.io/f/apjnllka" method="POST">
-        <div class="form-group">
-            <input type="text" name="name" placeholder="Your Name" required>
-        </div>
+    </footer>
 
-        <div class="form-group">
-            <input type="email" name="email" placeholder="Your Email" required>
-        </div>
-
-        <div class="form-group">
-            <textarea name="message" placeholder="Your Message" required></textarea>
-        </div>
-
-        <!-- Hidden Inputs for Security & Email Formatting -->
-        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table"> 
-        <input type="hidden" name="_subject" value="New Contact Form Submission">
-        <input type="hidden" name="_autoresponse" value="Thank you for reaching out! I will get back to you soon.">
-        
-        <button type="submit" class="btn">Send Message</button>
-    </form>
-    </section>
-    
-    <!-- Add Font Awesome for icons (Place this inside the <head> of your HTML) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-<footer id="footer">
-    <div class="footer-container">
-        <!-- About Section -->
-        <div class="footer-about">
-            <h2>About Me</h2>
-            <p>
-                I'm a passionate software developer specializing in web development, software engineering, 
-                and database management. I strive to create efficient and scalable digital solutions.
-            </p>
-        </div>
-
-        <!-- Quick Links -->
-        <div class="footer-links">
-            <h2>Quick Links</h2>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-
-        <!-- Social Media Links -->
-        <div class="footer-socials">
-            <h2>Follow Me</h2>
-            <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/omondi-philip-256a312a6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQYMykiwrRgCsKEOor5kucg%3D%3D" target="_blank">
-                    <i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="https://github.com/Philipo-mondi" target="_blank">
-                    <i class="fab fa-github"></i> GitHub</a></li>
-                <li><a href="https://web.facebook.com/omondiphilip123" target="_blank">
-                    <i class="fab fa-facebook"></i> Facebook</a></li>
-                <li><a href="mailto:omondiphilip123@gmail.com" target="_blank">
-                    <i class="fas fa-envelope"></i> E-mail</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Copyright -->
-    <p class="copyright">&copy; 2025 Philip Omondi. All Rights Reserved.</p>
-</footer>
-
-    
-    
     <script src="script.js"></script>
 </body>
 </html>
