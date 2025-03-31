@@ -83,25 +83,42 @@ document.querySelectorAll('section').forEach(section => {
 
 // Form submission handling
 const contactForm = document.querySelector('.contact-form');
+
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         const formData = new FormData(contactForm);
         try {
             const response = await fetch(contactForm.action, {
                 method: 'POST',
                 body: formData
             });
-            
+
             if (response.ok) {
-                alert('Thank you for your message! I will get back to you soon.');
+                showPopup("Thank you for your message! I will get back to you soon.", "success");
                 contactForm.reset();
             } else {
                 throw new Error('Something went wrong');
             }
         } catch (error) {
-            alert('Sorry, there was an error sending your message. Please try again later.');
+            showPopup("Sorry, there was an error sending your message. Please try again later.", "error");
         }
     });
+}
+
+// Function to show a popup message
+function showPopup(message, type) {
+    // Create popup element
+    const popup = document.createElement("div");
+    popup.classList.add("popup-message", type);
+    popup.innerText = message;
+
+    // Add popup to the body
+    document.body.appendChild(popup);
+
+    // Remove popup after 3 seconds
+    setTimeout(() => {
+        popup.remove();
+    }, 3000);
 }
