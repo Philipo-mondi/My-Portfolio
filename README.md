@@ -4,7 +4,7 @@ This is a personal portfolio website built to showcase my projects, skills, and 
 
 ## 🌐 Live Demo
 
-🚀 [View the Portfolio](https://philipo-mondi.github.io/My-Portfolio/) — hosted on GitHub Pages
+🚀 [View the Portfolio]([https://philipo-mondi.github.io/My-Portfolio/](https://github.com/Philipo-mondi/My-Portfolio/tree/main)) — hosted on GitHub Pages
 
 ## 📁 Project Structure
 
