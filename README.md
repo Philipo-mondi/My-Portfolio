@@ -26,7 +26,11 @@ This is a personal portfolio website built to showcase my projects, skills, and 
 
 ## 📸 Screenshots
 
-> *(Add your screenshots here — you can use tools like Lightshot or Snipping Tool and upload them to your repo or an image host.)*
+![image](https://github.com/user-attachments/assets/1b2d6a27-3466-487e-8b1e-7215e9b9bd84)
+![image](https://github.com/user-attachments/assets/e9994493-4996-4edc-848c-4d208936fbf8)
+![image](https://github.com/user-attachments/assets/45847319-ddeb-4682-bcbd-9784e6fcdc86)
+![image](https://github.com/user-attachments/assets/88004ed0-82ad-4f0f-a053-f03e726f4a0c)
+
 
 ## 📩 Contact
 
